@@ -9,6 +9,7 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Footer from './components/Footer';
 import {useScroll} from "framer-motion";
+import Menu from "./components/Menu";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -29,11 +30,14 @@ const GlobalStyles = createGlobalStyle`
 `
 
 function App() {
+  const [reveal, setReveal] = useState(false);
+  const revealMenu = () => setReveal(!reveal);
   return (
     <div className="App">
       <GlobalStyles />
       {/*<ScrollerMotion>*/}
-        <Navbar />
+        <Navbar revealMenu={revealMenu} />
+        {!reveal && <Menu revealMenu={revealMenu} />}
         <Hero />
         <About />
         <Projects />
