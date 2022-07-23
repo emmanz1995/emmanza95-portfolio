@@ -29,6 +29,7 @@ const Education = () => {
                                 <div className="certificate-img-wrapper">
                                     <img src={edu.certificate} alt="" className="certificate-img" width="400" height="600" />
                                 </div>
+                                <a href={edu.certificate}>Certificate</a>
                                 <p>What I learnt: {edu.content.join(', ')}</p>
                             </div>
                         </div>
