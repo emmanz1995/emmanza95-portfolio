@@ -6,6 +6,7 @@ export const StyledNavbarContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   @media screen and (max-width: ${(props: any) => props.theme.sm}) {}
 `
 export const StyledNavbarWrapper = styled.nav`
