@@ -25,7 +25,7 @@ const Navbar = () => {
                     <h2>Emmanz95</h2>
                 </div>
                 <div>
-                    <GiHamburgerMenu size={30} onClick={revealMenu} className="hamburger-menu" />
+                    <GiHamburgerMenu size={30} color="#002265" onClick={revealMenu} className="hamburger-menu" />
                 </div>
                 <ul className={reveal ? "nav-options expanded" : "nav-options"}>
                     <li>
