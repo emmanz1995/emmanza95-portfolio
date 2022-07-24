@@ -14,7 +14,7 @@ const Skills = () => {
     const skills = skillsData;
     console.log(skills)
     return (
-        <StyledSkillsContainer>
+        <StyledSkillsContainer id="skills">
             <motion.div className="skills-wrapper">
                 <div className="skills-title">
                     <h3>Skills</h3>
