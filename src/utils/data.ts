@@ -64,7 +64,7 @@ export const aboutData = {
     occupation: 'Software Engineer',
     shortDescription: 'I am a Full-Stack Developer who specializes in JavaScript and its technologies!',
     about: 'Hi, my name is Emmanuel Okuchukwu but you can called me emmanz95. I am a full-stack software engineer from London who mainly specializes in JavaScript. I work with React, Redux, Node.Js, HTML5, CSS3, Styled-Components and MongoDB. You can check out some of my projects below.',
-    portrait: '/assets/EmmanuelPortrait.jpeg'
+    portrait: '/assets/emmanuel portrait.jpg'
 }
 
 export const linkData =  [

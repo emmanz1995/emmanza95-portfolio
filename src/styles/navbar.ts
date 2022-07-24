@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const StyledNavbarContainer = styled.div`
   width: 100%;
   background-color: ${(props: any) => props.theme.primaryColor};
+  position: fixed;
+  top: 0;
+  left: 0;
   @media screen and (max-width: ${(props: any) => props.theme.sm}) {}
 `
 export const StyledNavbarWrapper = styled.nav`
@@ -50,6 +53,21 @@ export const StyledNavbarWrapper = styled.nav`
     .nav-options {
       display: none;
     }
+    .expanded {
+      display: block;
+      position: absolute;
+      top: 40px;
+      left: 59.5%;
+      text-align: center;
+      padding: 20px 30px;
+      background-color: ${(props: any) => props.theme.light};
+      border-radius: 5px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+      a {
+        color: ${(props: any) => props.theme.secondaryColor};
+      }
+    }
+    
     .hamburger-menu {
       display: block;
     }

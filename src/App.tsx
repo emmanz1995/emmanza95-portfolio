@@ -30,14 +30,11 @@ const GlobalStyles = createGlobalStyle`
 `
 
 function App() {
-  const [reveal, setReveal] = useState(false);
-  const revealMenu = () => setReveal(!reveal);
   return (
     <div className="App">
       <GlobalStyles />
       {/*<ScrollerMotion>*/}
-        <Navbar revealMenu={revealMenu} />
-        {!reveal && <Menu revealMenu={revealMenu} />}
+        <Navbar />
         <Hero />
         <About />
         <Projects />

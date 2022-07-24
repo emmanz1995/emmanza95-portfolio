@@ -57,4 +57,26 @@ export const StyledAboutContainer = styled.section`
       margin: 20px 10px;
     }
   }
+
+  @media screen and (max-width: ${(props: any) => props.theme.xsm}) {
+    width: 100%;
+    .about-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .about-img-wrapper {
+      width: 360px;
+    }
+    .about-img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .about-title {
+      margin: 10px;
+    }
+    .about-info {
+      margin: 20px 10px;
+    }
+  }
 `

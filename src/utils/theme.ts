@@ -1,4 +1,6 @@
 const media = {
+    usm: '250px',
+    xsm: '375px',
     sm: '475px',
     lg: '1024px'
 }

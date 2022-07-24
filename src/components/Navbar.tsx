@@ -1,10 +1,10 @@
-import React, { useState, useEffect, FC } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { StyledNavbarContainer, StyledNavbarWrapper } from '../styles/navbar';
 
-const Navbar: FC<{revealMenu: () => void}> = ({ revealMenu }) => {
-    // const [reveal, setReveal] = useState(false);
-    // const revealMenu = () => setReveal(!reveal);
+const Navbar = () => {
+    const [reveal, setReveal] = useState(false);
+    const revealMenu = () => setReveal(!reveal);
     // const [revealNav, setRevealNav] = useState(false)
     // const navTransition = () => {
     //     if (window.scrollY > 50) {
@@ -27,7 +27,7 @@ const Navbar: FC<{revealMenu: () => void}> = ({ revealMenu }) => {
                 <div>
                     <GiHamburgerMenu size={30} onClick={revealMenu} className="hamburger-menu" />
                 </div>
-                <ul className="nav-options">
+                <ul className={reveal ? "nav-options expanded" : "nav-options"}>
                     <li>
                         <a href="/#home">Home</a>
                     </li>

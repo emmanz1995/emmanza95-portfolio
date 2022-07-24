@@ -97,6 +97,7 @@ const StyledHeroContainer = styled.section`
     .header-wrapper {
       display: flex;
       flex-direction: column;
+      width: 100%;
     }
   }
 `

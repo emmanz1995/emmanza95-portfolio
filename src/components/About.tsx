@@ -4,7 +4,7 @@ import { aboutData } from '../utils/data';
 
 const About = () => {
     return (
-        <StyledAboutContainer >
+        <StyledAboutContainer>
             <div className="about-wrapper" id="about">
                 <div className="about-title">
                     <h3>About</h3>

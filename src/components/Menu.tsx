@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const StyledMenuContainer = styled.ul`
   list-style: none;
-  display: none;
-  //flex-direction: column;
-  //align-items: center;
+  //display: none;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   gap: 10px;
   position: absolute;
@@ -18,7 +18,7 @@ const StyledMenuContainer = styled.ul`
     color: ${(props: any) => props.theme.secondaryColor};
   }
   @media screen and (max-width: ${(props: any) => props.theme.sm}) {
-    display: block;
+    //display: inline-block;
   }
 `;
 
