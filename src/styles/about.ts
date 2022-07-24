@@ -38,9 +38,12 @@ export const StyledAboutContainer = styled.section`
   }
   @media screen and (max-width: ${(props: any) => props.theme.sm}) {
     width: 100%;
+    margin-bottom: 0;
     .about-info {
       display: flex;
       flex-direction: column;
+      gap: 20px;
+      margin: 20px 10px;
     }
     .about-img-wrapper {
       width: 400px;
@@ -53,16 +56,16 @@ export const StyledAboutContainer = styled.section`
     .about-title {
       margin: 10px;
     }
-    .about-info {
-      margin: 20px 10px;
-    }
   }
 
   @media screen and (max-width: ${(props: any) => props.theme.xsm}) {
     width: 100%;
+    margin-bottom: 0;
     .about-info {
       display: flex;
       flex-direction: column;
+      gap: 20px;
+      margin: 20px 10px;
     }
     .about-img-wrapper {
       width: 360px;
@@ -74,9 +77,6 @@ export const StyledAboutContainer = styled.section`
     }
     .about-title {
       margin: 10px;
-    }
-    .about-info {
-      margin: 20px 10px;
     }
   }
 `
