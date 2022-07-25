@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { IAbout } from '../utils/types';
 import { aboutData } from '../utils/data';
 import { SiGmail, SiInstagram, SiTwitter, SiGithub, SiLinkedin } from 'react-icons/si';
+import { MdOutlineMail } from 'react-icons/md';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Hero = () => {
@@ -30,13 +31,7 @@ const Hero = () => {
                 <div className="contact">
                     <div className="social-media-container">
                         <a href="mailto:emmanza2@gmail.com " className="handles" target="_blank" rel="noreferrer">
-                            <SiGmail size={30} />
-                        </a>
-                        <a href="https://www.instagram.com/emmanz77/" className="handles" target="_blank" rel="noreferrer">
-                            <SiInstagram size={30} />
-                        </a>
-                        <a href="https://twitter.com/emmanza2" className="handles" target="_blank" rel="noreferrer">
-                            <SiTwitter size={30} />
+                            <MdOutlineMail size={30} />
                         </a>
                         <a href="https://github.com/emmanz1995" className="handles" target="_blank" rel="noreferrer">
                             <SiGithub size={30} />
@@ -67,6 +62,7 @@ const StyledHeroContainer = styled.section`
   .about-img {
     width: 100%;
     height: auto;
+    //clip-path: circle(40%);
   }
   .header-wrapper {
     width: 500px;

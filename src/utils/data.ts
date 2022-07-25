@@ -59,7 +59,7 @@
 
 export const aboutData = {
     name: 'Emmanuel Okuchukwu',
-    pic: 'assets/undraw_developer_activity_re_39tg.svg',
+    pic: '/assets/emmanz95-avatar.JPG',
     nickname: 'emmanz95',
     occupation: 'Software Engineer',
     shortDescription: 'I am a Full-Stack Developer who specializes in JavaScript and its technologies!',
