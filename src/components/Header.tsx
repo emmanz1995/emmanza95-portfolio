@@ -7,13 +7,13 @@ import { MdOutlineMail } from 'react-icons/md';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Hero = () => {
-    const { text } = useTypewriter({
-        words: ['Software Engineer', 'JavaScript Developer', 'Gamer', 'Data engineering enthusiast'],
-        loop: 0,
-        onLoopDone: () => console.log('loop completed after 3 runs.'),
-        delaySpeed: 1500,
-        typeSpeed: 90
-    })
+    // const { text } = useTypewriter({
+    //     words: ['Software Engineer', 'JavaScript Developer', 'Gamer', 'Data engineering enthusiast'],
+    //     loop: 0,
+    //     onLoopDone: () => console.log('loop completed after 3 runs.'),
+    //     delaySpeed: 1500,
+    //     typeSpeed: 90
+    // })
     return (
         <StyledHeroContainer id="home">
             <div className="hero-container">
@@ -24,8 +24,7 @@ const Hero = () => {
                     <div className="about-info">
                         <p>Hi there I'm</p>
                         <h2>{aboutData.name}</h2>
-                        {text}
-                        <Cursor />
+                        <h3>{aboutData.occupation}</h3>
                     </div>
                 </div>
                 <div className="contact">
@@ -62,10 +61,10 @@ const StyledHeroContainer = styled.section`
   .about-img {
     width: 100%;
     height: auto;
-    //clip-path: circle(40%);
+    clip-path: circle(40%);
   }
   .header-wrapper {
-    width: 500px;
+    width: 470px;
     display: flex;
     justify-content: space-between;
     align-items: center;
