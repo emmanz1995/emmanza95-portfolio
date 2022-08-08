@@ -1,12 +1,11 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { IAbout } from '../utils/types';
 import { aboutData } from '../utils/data';
-import { SiGmail, SiInstagram, SiTwitter, SiGithub, SiLinkedin } from 'react-icons/si';
+import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { MdOutlineMail } from 'react-icons/md';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+// import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
-const Hero = () => {
+const Hero:FC = () => {
     // const { text } = useTypewriter({
     //     words: ['Software Engineer', 'JavaScript Developer', 'Gamer', 'Data engineering enthusiast'],
     //     loop: 0,
