@@ -129,7 +129,17 @@ export const projectData = [
         webLinks: "https://expenses-chart-component-frontend-mentor.netlify.app/",
         gitHub: "https://github.com/emmanz1995/expenses-chart-component",
         type: "Component"
-    }
+    },
+    {
+        id: "todo-react-app-frontend-mentor",
+        title: "Todo React App Frontend Mentor",
+        headline: "This todo app was a challenge to build for the frontend mentor to test my knowledge using JavaScript.",
+        description: "This todo app was a challenge to build for the frontend mentor. I used React, React Hooks and styled-components to build this app out.",
+        screenshot: "assets/todo-app-screenshot.png",
+        webLinks: "https://todo-frontend-mentor.netlify.app/",
+        gitHub: "https://github.com/emmanz1995/react-todo-app",
+        type: "Web Application"
+    },
 ]
 
 export const educationData = [
