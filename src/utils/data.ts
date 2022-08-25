@@ -140,6 +140,16 @@ export const projectData = [
         gitHub: "https://github.com/emmanz1995/react-todo-app",
         type: "Web Application"
     },
+    {
+        id: "mern-social-media-app",
+        title: "MERN Stack Social Media App",
+        headline: "This todo app was a challenge to build for the frontend mentor to test my knowledge using JavaScript.",
+        description: "This todo app was a challenge to build for the frontend mentor. I used React, React Hooks and styled-components to build this app out.",
+        screenshot: "assets/mern-stack-app.png",
+        webLinks: "",
+        gitHub: "https://github.com/emmanz1995/connect-one-frontend/",
+        type: "Web Application"
+    },
 ]
 
 export const educationData = [
