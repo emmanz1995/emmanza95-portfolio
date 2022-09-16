@@ -44,7 +44,7 @@ const Navbar = () => {
                         <a href="#education">Education</a>
                     </li>
                     <li>
-                        <a href="/assets/Emmanuel Okuchukwu (2).pdf" target="_blank" rel="noreferrer">Download CV</a>
+                        <a href="/assets/Emmanuel CV (1).pdf" target="_blank" rel="noreferrer">Download CV</a>
                     </li>
                     {/*<li>*/}
                     {/*    <Link href="/contact">Contact</Link>*/}
