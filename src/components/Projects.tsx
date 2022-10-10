@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyledProjectContainer } from '../styles/projects';
 import { projectData } from '../utils/data';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
     const projects = projectData;
@@ -12,7 +13,7 @@ const Projects = () => {
                 </div>
                 <div className="flex-project">
                     {projects.map((project) => (
-                        <div key={project.id} className="project-card">
+                        <motion.div key={project.id} className="project-card" whileHover={{ scale: 1.1 }}>
                             <div>
                                 <div>
                                     <img src={project.screenshot} width="600" height="400" alt="" className="project-img" />
@@ -30,7 +31,7 @@ const Projects = () => {
                                     <a href={project.webLinks} className="button-link" target="_blank" rel="noreferrer">Live Preview</a>
                                 </span>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

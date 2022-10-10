@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import { aboutData } from '../utils/data';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { MdOutlineMail } from 'react-icons/md';
-// import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Hero:FC = () => {
-    // const { text } = useTypewriter({
-    //     words: ['Software Engineer', 'JavaScript Developer', 'Gamer', 'Data engineering enthusiast'],
-    //     loop: 0,
-    //     onLoopDone: () => console.log('loop completed after 3 runs.'),
-    //     delaySpeed: 1500,
-    //     typeSpeed: 90
-    // })
+    const { text } = useTypewriter({
+        words: ['Software Engineer', 'JavaScript Engineer', 'Gamer', 'React Enthusiast'],
+        loop: 0,
+        onLoopDone: () => console.log('loop completed after 3 runs.'),
+        delaySpeed: 1500,
+        typeSpeed: 90
+    })
     return (
         <StyledHeroContainer id="home">
             <div className="hero-container">
@@ -23,7 +23,7 @@ const Hero:FC = () => {
                     <div className="about-info">
                         <p>Hi there I'm</p>
                         <h2>{aboutData.name}</h2>
-                        <h3>{aboutData.occupation}</h3>
+                        <h3>{text}</h3>
                     </div>
                 </div>
                 <div className="contact">
@@ -48,11 +48,12 @@ export default Hero;
 
 const StyledHeroContainer = styled.section`
   background-color: ${(props: any) => props.theme.primaryColor};
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  clip-path: polygon(100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px), 0 0);
   .hero-container {}
   .img-wrapper {
     width: 200px;
