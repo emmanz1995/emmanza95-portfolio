@@ -78,14 +78,14 @@ export const linkData =  [
 export const skillsData = [
     {tech: 'HTML5', level: '85%', icon: '/assets/icons/html5.svg'},
     {tech: 'CSS3', level: '83%', icon: '/assets/icons/css3.svg'},
-    {tech: 'JavaScript', level: '70%', icon: '/assets/icons/javascript.svg'},
-    {tech: 'React', level: '75%', icon: '/assets/icons/react.svg'},
-    {tech: 'Redux', level: '60%', icon: '/assets/icons/redux.svg'},
-    {tech: 'Node.Js', level: '65%', icon: '/assets/icons/nodejs.svg'},
-    {tech: 'TypeScript', level: '40%', icon: '/assets/icons/typescript.svg'},
-    {tech: 'Cypress', level: '32%', icon: '/assets/icons/cypress.svg'},
-    {tech: 'Styled-Components', level: '65%', icon: '/assets/icons/styled-components.svg'},
-    {tech: 'SASS', level: '65%', icon: '/assets/icons/sass.svg'},
+    {tech: 'JavaScript', level: '80%', icon: '/assets/icons/javascript.svg'},
+    {tech: 'React', level: '85%', icon: '/assets/icons/react.svg'},
+    {tech: 'Redux', level: '70%', icon: '/assets/icons/redux.svg'},
+    {tech: 'Node.Js', level: '75%', icon: '/assets/icons/nodejs.svg'},
+    {tech: 'TypeScript', level: '50%', icon: '/assets/icons/typescript.svg'},
+    {tech: 'Cypress', level: '52%', icon: '/assets/icons/cypress.svg'},
+    {tech: 'Styled-Components', level: '69%', icon: '/assets/icons/styled-components.svg'},
+    {tech: 'SASS', level: '70%', icon: '/assets/icons/sass.svg'},
     {tech: 'PHP', level: '30%', icon: '/assets/icons/php.svg'},
 ]
 

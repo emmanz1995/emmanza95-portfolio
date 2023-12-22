@@ -5,9 +5,13 @@ import { motion } from 'framer-motion';
 
 const Projects = () => {
     const projects = projectData;
+    const projectsAnimation = {
+        visible: { opacity: 1, scale: 1 },
+        hidden: { opacity: 0, scale: 0 }
+    }
     return (
         <StyledProjectContainer id="projects">
-            <div className="project-wrapper">
+            <motion.div className="project-wrapper" variants={projectsAnimation} initial="hidden" animate="visible">
                 <div className="project-title">
                     <h3>Projects</h3>
                 </div>
@@ -34,7 +38,7 @@ const Projects = () => {
                         </motion.div>
                     ))}
                 </div>
-            </div>
+            </motion.div>
         </StyledProjectContainer>
     );
 };

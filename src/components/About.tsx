@@ -1,11 +1,12 @@
 import React from 'react';
 import { StyledAboutContainer } from '../styles/about';
 import { aboutData } from '../utils/data';
+import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <StyledAboutContainer id="about">
-            <div className="about-wrapper">
+        <StyledAboutContainer id="about" variants={{ visible: { opacity: 1 }, hidden: { opacity: 0 } }}>
+            <motion.div className="about-wrapper">
                 <div className="about-title">
                     <h3>About</h3>
                 </div>
@@ -17,7 +18,7 @@ const About = () => {
                         <p className="text">{aboutData.about}</p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </StyledAboutContainer>
     );
 };

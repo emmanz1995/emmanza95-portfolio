@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const StyledAboutContainer = styled.section`
+export const StyledAboutContainer = styled(motion.section)`
   display: flex;
   width: 100%;
   background-color: #fff;
