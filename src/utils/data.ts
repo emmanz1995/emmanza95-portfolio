@@ -87,6 +87,7 @@ export const skillsData = [
     {tech: 'Styled-Components', level: '69%', icon: '/assets/icons/styled-components.svg'},
     {tech: 'SASS', level: '70%', icon: '/assets/icons/sass.svg'},
     {tech: 'PHP', level: '30%', icon: '/assets/icons/php.svg'},
+    {tech: 'Python', level: '25%', icon: '/assets/icons/python.svg'}
 ]
 
 export const projectData = [
